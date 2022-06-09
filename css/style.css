@@ -179,7 +179,7 @@ h6 {
     position: absolute;
 }
 .full-page-left-img img {
-    width: 190px;
+    width: 215px;
 }
 .grow-more-banner {
     padding-top: 78px;
@@ -212,7 +212,7 @@ h6 {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 3rem 0 62px 0;
+    padding: 7rem 0 32px 0;
     overflow: hidden;
 }
 .slanted-bg {
@@ -224,7 +224,7 @@ h6 {
     width: 100%;
     height: 100%;
     background: #FFBE00;
-    transform: skewY(-7deg);
+    transform: skewY(-9deg);
     transform-origin: top right;
 }
 .slanted-content {
@@ -238,11 +238,10 @@ h6 {
         left: 330px;
     }
 .slanted-img-abs img {
-    width: 192px;
+    width: 246px;
 }
 .slanted-content {
     text-align: center;
-    padding-top: 45px;
 }
 .slanted-content hr {
     width: 200px;
