@@ -29,13 +29,13 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">About Us</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item active">
                           <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
@@ -91,35 +91,34 @@
                     </div>
                 </div>
             </div>
-        
             <div class="counter ptb-60">
                 <div class="container">
                     <div class="row text-center">
                         <div class="col-md-3">
                             <div class="counter-item">
                                 <i class="fa-solid fa-eye"></i>
-                                <h2>98765</h2>
+                                <h2 class="count">98</h2>
                                 <p>lorem ipsum sit ammet</p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="counter-item">
                                 <i class="fa-solid fa-building"></i>
-                                <h2>3214</h2>
+                                <h2 class="count">24</h2>
                                 <p>lorem ipsum sit ammet</p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="counter-item">
                                 <i class="fa-solid fa-eye"></i>
-                                <h2>12</h2>
+                                <h2 class="count">102</h2>
                                 <p>lorem ipsum sit ammet</p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="counter-item">
                                 <i class="fa-solid fa-building"></i>
-                                <h2>5678</h2>
+                                <h2 class="count">78</h2>
                                 <p>lorem ipsum sit ammet</p>
                             </div>
                         </div>
@@ -232,7 +231,32 @@
     </script>
     <script src="js/font-awesome/all.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(window).on("load resize",function() {
 
+var counters = $(".count");
+var countersQuantity = counters.length;
+var counter = [];
+
+for (i = 0; i < countersQuantity; i++) {
+  counter[i] = parseInt(counters[i].innerHTML);
+}
+
+var count = function(start, value, id) {
+  var localStart = start;
+  setInterval(function() {
+    if (localStart < value) {
+      localStart++;
+      counters[id].innerHTML = localStart;
+    }
+  }, 100);
+}
+
+for (j = 0; j < countersQuantity; j++) {
+  count(0, counter[j], j);
+}
+});
+      </script>
 </body>
 
 </html>

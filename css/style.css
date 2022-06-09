@@ -76,7 +76,12 @@ h6 {
     font-size: 14px;
     text-transform: uppercase;
 }
-
+.active .nav-link {
+    color: #FFBE00 !important;
+}
+.header-pages .nav-link:hover {
+    color: #FFBE00 !important;
+}
 /* Home Page Header */
 .header {
     background-color: #ffda9b;
@@ -197,7 +202,6 @@ h6 {
     color : #fff;
     padding: 8px 30px;
     text-decoration: none;
-    /* border: 1px solid #ebb109; */
     border-radius: 4px;
     font-size: 14px;
     font-weight: 700;
@@ -274,6 +278,8 @@ h6 {
     text-transform: uppercase;
     background: transparent;
     box-shadow: rgb(0 0 0 / 35%) 0px 2px 5px;
+    -webkit-transition: all .5s ease-in;
+    -moz-animation: all .5s ease-in;
     transition: all .5s ease-in;
 }
 .slanted-a a:hover {
@@ -333,12 +339,35 @@ opacity: .7;
 .contact-banner {
     background-image: url(../images/banner4.jpg);
 }
+.contact-hr {
+    width: 100px;
+    background: #010101;
+    opacity: 1;
+    padding: 1px 0;
+    margin-bottom: 10px;
+  }
 .contact-form .btn-primary {
     color: #fff;
     background-color: #FFBE00 ;
     border-color: #FFBE00 ;
 }
-
+.contact-form .submit {
+    color : #fff;
+    padding: 8px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #FFBE00;
+    border: 1px solid #FFBE00;
+    box-shadow: rgb(0 0 0 / 35%) 0px 2px 5px;
+    transition: all .5s ease-in;
+}
+.contact-form .submit:hover {
+    background: #ffda9b;
+    color: #010101;
+}
 /* Services */
 .service-banner {
     background-image: url(../images/banner1.jpg);
@@ -529,7 +558,12 @@ padding-bottom: 5px;
   text-transform: uppercase;
   background: transparent;
   box-shadow: rgb(0 0 0 / 35%) 0px 2px 5px;
-  transition: all .3s;
+  transition: all .5s ease-in;
+}
+.ex-a:hover {
+    background: #ffda9b;
+    border: 1px solid #ffda9b;
+    color: #010101;
 }
 .last-p {
   overflow: hidden;
@@ -546,7 +580,7 @@ padding-bottom: 5px;
 
 
 .footer {
-    background: #dda70b;
+    background: #ffda9b;
     transition: .5s;
     -webkit-transition: .5s;
     color: #1b1b1b;
