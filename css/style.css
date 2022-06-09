@@ -179,7 +179,7 @@ h6 {
     position: absolute;
 }
 .full-page-left-img img {
-    width: 215px;
+    width: 225px;
 }
 .grow-more-banner {
     padding-top: 78px;
@@ -193,7 +193,7 @@ h6 {
     font-size: 25px;
     text-transform: uppercase;
 }
-.grow-more-banner a {
+.growmore-banner-right a {
     color : #fff;
     padding: 8px 30px;
     text-decoration: none;
@@ -204,7 +204,11 @@ h6 {
     text-transform: uppercase;
     background: #FFBE00;
     box-shadow: rgb(0 0 0 / 35%) 0px 2px 5px;
-    transition: all .3s;
+    transition: all .5s ease-in;
+}
+.growmore-banner-right a:hover {
+    background: #ffda9b;
+    color: #010101;
 }
 /* Slanted */
 
@@ -212,8 +216,9 @@ h6 {
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 7rem 0 32px 0;
+    padding: 6.2rem 0 32px 0;
     overflow: hidden;
+    margin-top: 20px;
 }
 .slanted-bg {
     position: absolute;
@@ -269,7 +274,12 @@ h6 {
     text-transform: uppercase;
     background: transparent;
     box-shadow: rgb(0 0 0 / 35%) 0px 2px 5px;
-    transition: all .3s;
+    transition: all .5s ease-in;
+}
+.slanted-a a:hover {
+    color: #010101;
+    border: 1px solid #ffda9b;
+    background-color: #ffda9b;
 }
 /* ====== Pages ====== */
 .full-page-two {
@@ -580,6 +590,9 @@ border-radius: 50%;
 .footer-item h4 span {
     border-bottom: 3px solid #FFBE00 ;
     padding-bottom: 6px;
+}
+.footer-item.footer-left-padding {
+    padding-left: 50px;
 }
 .last-footer {
     background: gray;
