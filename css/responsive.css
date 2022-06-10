@@ -7,3 +7,11 @@
         padding-bottom: 40px;
     }
 }
+@media (max-width: 1536px) { 
+    .full-page-left-img img {
+        width: 239px;
+    }
+    .main-body-slanted {
+        padding: 10.2rem 0 32px 0;
+    }
+}
