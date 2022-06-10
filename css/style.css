@@ -53,6 +53,12 @@ h6 {
 .color-black {
     color: #000;
 }
+.color-golden {
+    color: #BF8915;
+}
+.color-crimson {
+    color: #DC143C;
+}
 
 /*Bootstrap Overwrite*/
 .header-pages .container-fluid {
@@ -437,6 +443,18 @@ border-radius: 4px;
     margin: 8px 3px;
     cursor: default !important;
     box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+}
+.btn-color-crimson {
+    border: 1px solid #DC143C;
+    color: #DC143C;
+}
+.btn-color-black {
+    border: 1px solid #000;
+    color: #000;
+}
+.btn-color-golden {
+    border: 1px solid #BF8915;
+    color: #BF8915;
 }
 .imagination {
     background-color: #e5e5e5;
