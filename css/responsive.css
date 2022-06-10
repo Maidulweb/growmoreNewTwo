@@ -14,4 +14,7 @@
     .main-body-slanted {
         padding: 10.2rem 0 32px 0;
     }
+    .slanted-img-abs img {
+        width: 308px;
+    }
 }
